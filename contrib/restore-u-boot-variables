@@ -1,0 +1,11 @@
+#!/bin/sh
+
+fw_setenv ethaddr $(otpvpd /dev/mtd0 mac-address 0)
+fw_setenv eth1addr $(otpvpd /dev/mtd0 mac-address 1)
+fw_setenv eth2addr $(otpvpd /dev/mtd0 mac-address 2)
+fw_setenv eth3addr $(otpvpd /dev/mtd0 mac-address 3)
+fw_setenv eth4addr $(otpvpd /dev/mtd0 mac-address 4)
+fw_setenv eth5addr $(otpvpd /dev/mtd0 mac-address 5)
+fw_setenv eth6addr $(otpvpd /dev/mtd0 mac-address 6)
+fw_setenv eth7addr $(otpvpd /dev/mtd0 mac-address 6)
+fw_setenv 'serial#' $(otpvpd /dev/mtd0 serial-number)
